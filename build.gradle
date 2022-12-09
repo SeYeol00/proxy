@@ -26,6 +26,8 @@ dependencies {
 	//테스트에서 lombok 사용
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+	//스프링부트 aop관련 클래스 자동 빈 등록, 빈 자동 후처리기 스프링 등록 가능
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
 }
 
 test {
