@@ -58,7 +58,7 @@ public class AutoProxyConfig {
         // 실무에서 사용하는 포인트컷, 표현식을 알아두자
         AspectJExpressionPointcut pointcut = new AspectJExpressionPointcut();
         // 이 위치에만 어드바이저를 적용시켜라, 문법은 아래를 참고하자
-        // no-log는 제외시킨 표현식 
+        // no-log는 제외시킨 표현식
         pointcut.setExpression("execution(* hello.proxy.app..*(..))" +
                 "&& !execution(* hello.proxy.app..noLog(..))");
         //advice
